@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Elena9477](https://up.htmlacademy.ru/htmlcss/30/user/1629095).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273)
 
 ---
 
