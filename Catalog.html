@@ -7,164 +7,308 @@
 </head>
 
 <body>
-  <header>
-    <a href="">
-      <img src="https://via.placeholder.com/159.87x65.02" alt="Nerds">
+  <header class="nav">
+    <a class="nav__logo" href="#">
+      <img class="nav__logo-nerds" src="./img/nerds-logo.png" alt="Nerds">
     </a>
-    <nav>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+    <nav class="nav__block">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link-studio" href="#">Студия</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link-clients" href="#">Клиенты</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link-shop" href="catalog.html">Магазин</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link-contact" href="#">Контакты</a>
+        </li>
       </ul>
-      <a href="#">Корзина</a>
+      <a class="nav__link-cart" href="#">Корзина</a>
     </nav>
   </header>
-  <main>
-    <h2>Магазин готовых шаблонов</h2>
-    <section>
-      <aside>
-        <div>
-          <h3>Фильтр стоимости</h3>
-          <p>Стоимость</p>
-          <li><input tupe="range" min="1" max="15000" step="100" value="7500"></li>
-          <li><label for="subscribe-field">От</label><input type="namber" min="1">
-            <label for="subscribe-field">До</label><input type="namber" max="15000">
-          </li>
-        </div>
-        <div>
-          <h3>Сетка</h3>
-          <ul>
-            <li>
-              <input tyre="checkbox" name="Адаптивная" id=filter-Адаптивная checked>
-              <label for="filter-Адаптивная">Адаптивная</label>
-            </li>
-            <li>
-              <input tyre="checkbox" name="Фиксированная" id=filter-Фиксированная checked>
-              <label for="filter-Фиксированная">Фиксированная</label>
-            </li>
-            <li>
-              <input tyre="checkbox" name="Резиновая" id=filter-Резиновая checked>
-              <label for="filter-Резиновая">Резиновая</label>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Особенности</h3>
-          <ul>
-            <li>
-              <input tyre="checkbox" name="Слайдер" id=filter-Слайдер checked>
-              <label for="filter-Слайдер">Слайдер</label>
-            </li>
-            <li>
-              <input tyre="checkbox" name="Блок преимуществ" id=filter-Блок преимуществ checked>
-              <label for="filter-Блок преимуществ">Блок преимуществ</label>
-            </li>
-            <li>
-              <input tyre="checkbox" name="Новости" id=filter-Новости checked>
-              <label for="filter-Новости">Новости</label>
-            </li>
-            <li>
-              <input tyre="checkbox" name="Галерея" id=filter-Галерея checked>
-              <label for="filter-Галерея">Галерея</label>
-            </li>
-            <li>
-              <input tyre="checkbox" name="Корзина" id=filter-Корзина checked>
-              <label for="filter-Корзина">Корзина</label>
-            </li>
-          </ul>
-        </div>
+  <main class="mainly">
+    <h2 class="mainly__title">Магазин готовых шаблонов</h2>
+    <div class="catalog-container">
+      <aside class="filter">
+        <h3>Фильтр стоимости</h3>
+        <form>
+        </form>
       </aside>
-      <a href="">Показать</a>
-    </section>
-    <section>
-      <h3>Сортировка</h3>
-      <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Каталог</h2>
-      <ul>
-        <img src="https://via.placeholder.com/358x578" alt="Sedona">
-        <li>
-          <h3>Sedona</h3>
-          <a href="#"></a>
-          <p>Информационный сайт для туристов</p>
-          <p>Цена</p>
-        </li>
-        <img src="https://via.placeholder.com/358x578" alt="Pink">
-        <li>
-          <h3>Pink</h3>
-          <a href="#"></a>
-          <p>Устали от сырости мегаполиса?</p>
-          <p>Цена</p>
-        </li>
-        <img src="https://via.placeholder.com/358x578" alt="Barbershop Borodinski">
-        <li>
-          <h3>Barbershop Borodinski</h3>
-          <a href="#"></a>
-          <p>Стрижки быстро, круто, дорого</p>
-          <p>Цена</p>
-        </li>
-        <img src="https://via.placeholder.com/358x578" alt="Mishka">
-        <li>
-          <h3>Mishka/h3>
-            <a href="#"></a>
-            <p>Вязанные корзиночки</p>
-            <p>Цена</p>
-        </li>
-        <img src="https://via.placeholder.com/358x578" alt="A+">
-        <li>
-          <h3>A+</h3>
-          <a href="#"></a>
-          <p>Интересная учёба</p>
-          <p>Цена</p>
-        </li>
-        <img src="https://via.placeholder.com/358x578" alt="Kbact">
-        <li>
-          <h3>Kbact</h3>
-          <a href="#"></a>
-          <p>Крафтовый квас</p>
-          <p>Цена</p>
-        </li>
-      </ul>
-      <div>
-        <a href="#1">1</a>
-        <a href="#2">2</a>
-        <a href="#3">3</a>
-        <a href="#4">4</a>
-        <a href="#next">Следующая</a>
+      <div class="result-container">
+        <section class="sorting">
+          <h3 class="sorting__title">Сортировать:</h3>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По названию</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По убыванию</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По возрастанию</a>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img class="catalog__img" src="./img/sedona.jpg" alt="Sedona">
+              <div class="catalog__info-block">
+                <h3 class="catalog__info-block-title">Sedona</h3>
+                <p class="catalog__info-block-text">Информационный сайт для туристов</p>
+                <a class="catalog__info-block-link" href="#">Цена</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <img class="catalog__img" src="./img/pink.jpg" alt="Pink">
+              <div class="catalog__info-block">
+                <h3 class="catalog__info-block-title">Pink</h3>
+                <p class="catalog__info-block-text">Устали от сырости мегаполиса?</p>
+                <a class="catalog__info-block-link" href="#">Цена</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <img class="catalog__img" src="./img/Barbershop.jpg" alt="Barbershop Borodinski">
+              <div class="catalog__info-block">
+                <h3 class="catalog__info-block-title">Barbershop Borodinski</h3>
+                <p class="catalog__info-block-text">Стрижки быстро, круто, дорого</p>
+                <a class="catalog__info-block-link" href="#">Цена</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <img class="catalog__img" src="./img/Mishka.jpg" alt="Mishka">
+              <div class="catalog__info-block">
+                <h3 class="catalog__info-block-title">Mishka</h3>
+                <p class="catalog__info-block-text">Вязаные корзиночки</p>
+                <a class="catalog__info-block-link" href="#">Цена</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <img class="catalog__img" src="./img/A+.jpg" alt="A+">
+              <div class="catalog__info-block">
+                <h3 class="catalog__info-block-title">A+</h3>
+                <p class="catalog__info-block-text">Интересная учёба</p>
+                <a class="catalog__info-block-link" href="#">Цена</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <img class="catalog__img" src="./img/Kbact.jpg" alt="Kbact">
+              <div class="catalog__info-block">
+                <h3 class="catalog__info-block-title">Kbact</h3>
+                <p class="catalog__info-block-text">Крафтовый квас</p>
+                <a class="catalog__info-block-link" href="#">Цена</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="pagination">
+          <h2 class="visually-hidden">Переключатель страниц</h2>
+          <div class="pager">
+            <a class="pager__link" href="#1">1</a>
+            <a class="pager__link" href="#2">2</a>
+            <a class="pager__link" href="#3">3</a>
+            <a class="pager__link" href="#4">4</a>
+            <a class="pager__link" href="#next">Следующая</a>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   </main>
   <footer>
-    <section>
-      <h2>Адрес</h2>
-      <img src="#" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
-      <div>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#">Напишите нам</a>
+    <section class="address">
+      <h2 class="visually-hidden">Адрес</h2>
+      <img class="address__map" src="#"
+        alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
+      <div class=address__block>
+        <h3 class="address__title">NЁRDS DESIGN STUDIO</h3>
+        <address class="address__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <a href="tel:78122757575" class="address__tel">тел. +7 (812) 275-75-75</a>
+        <a class="address__write-us" href="#">Напишите нам</a>
       </div>
     </section>
-    <section>
-      <h2>Соцсети</h2>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграмм</a></li>
+    <section class="socials">
+      <h2 class="visually-hidden">Соцсети</h2>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link" href="#">Вконтакте</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">Фейсбук</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">Инстаграмм</a>
+        </li>
       </ul>
-      <div>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="socials__discount">
+        <p class="socials__discount-text">Давайте дружить, это выгодно!</p>
+        <p class="socials__discount-text">Скидка 10% для друзей из социальных сетей</p>
       </div>
     </section>
   </footer>
+</body>
+
+</html>
+
+
+
+<!--********************************************************************-->>
+
+
+
+<div class="catalog-container">
+  <aside class="filter">
+    <h3 class="visually-hidden">Фильтр стоимости</h3>
+    <form action="#" method="#">
+      <h4 class="filter__title">Стоимость:</h4>
+      <li class="filter__item">
+        <input type="range" min="1" max="15000" step="100" value="7500">
+      </li>
+      <li class="filter__item">
+        <label>dо</label><input type="namber" max="15000">
+      </li>
+      <h4 class="filter__title">Сетка:</h4>
+
+      <label><input type="radio" name="adaptive" id="adaptive-filter" value="Адаптивная"></label>
+      <label for="adaptive-filter">Адаптивная</label>
+      <br>
+      <label><input type="radio" name="fixed" id="fixed-filter" value="Фиксированная"></label>
+      <label for="fixed-filter">Фиксированная</label>
+      <br>
+      <label><input type="radio" name="rubber" id=rubber-filter></label>
+      <label for="rubber-filter">Резиновая</label>
+
+      </ul>
+      <h4 class="filter__title">Особенности:</h4>
+      <label><input type="checkbox" name="slider" id="slider-filter" checked></label>
+      <label for="slider-filter">Слайдер</label>
+      <br>
+      <label><input type="checkbox" name="block of advantages" id="block of advantages-filter" checked></label>
+      <label for="block of advantages-filter">Блок преимуществ</label>
+      <br>
+      <label><input type="checkbox" name="news" id="news-filter" checked></label>
+      <label for="news-filter">Новости</label>
+      <br>
+      <label><input type="checkbox" name="gallery" id="gallery-filter" checked></label>
+      <label for="gallery-filter">Галерея</label>
+      <br>
+      <label><input type="checkbox" name="basket" id="basket-filter" checked></label>
+      <label for="basket-filter">Корзина</label>
+      <br>
+      <input type="submit" value="Показать">
+    </form>
+  </aside>
+</div>
+<section class="sorting">
+  <h3>Сортировка</h3>
+  <ul class="sorting_list">
+    <li class="sorting_item">
+      <a class="sorting_list" href="#">По цене</a>
+    </li>
+    <li class="sorting_item">
+      <a class="sorting_list" href="#">По типу</a>
+    </li>
+    <li class="sorting_item">
+      <a class="sorting_list" href="#">По названию</a>
+    </li>
+    <li class="sorting_item">
+      <a class="sorting_list" href="#">По убыванию</a>
+    </li>
+    <li class="sorting_item">
+      <a class="sorting_list" href="#">По возрастанию</a>
+    </li>
+  </ul>
+</section>
+<section class="catalog">
+  <h2>Каталог</h2>
+  <ul>
+    <img src="https://via.placeholder.com/358x578" alt="Sedona">
+    <li>
+      <h3>Sedona</h3>
+      <a href="#"></a>
+      <p>Информационный сайт для туристов</p>
+      <p>Цена</p>
+    </li>
+    <img src="https://via.placeholder.com/358x578" alt="Pink">
+    <li>
+      <h3>Pink</h3>
+      <a href="#"></a>
+      <p>Устали от сырости мегаполиса?</p>
+      <p>Цена</p>
+    </li>
+    <img src="https://via.placeholder.com/358x578" alt="Barbershop Borodinski">
+    <li>
+      <h3>Barbershop Borodinski</h3>
+      <a href="#"></a>
+      <p>Стрижки быстро, круто, дорого</p>
+      <p>Цена</p>
+    </li>
+    <img src="https://via.placeholder.com/358x578" alt="Mishka">
+    <li>
+      <h3>Mishka/h3>
+        <a href="#"></a>
+        <p>Вязанные корзиночки</p>
+        <p>Цена</p>
+    </li>
+    <img src="https://via.placeholder.com/358x578" alt="A+">
+    <li>
+      <h3>A+</h3>
+      <a href="#"></a>
+      <p>Интересная учёба</p>
+      <p>Цена</p>
+    </li>
+    <img src="https://via.placeholder.com/358x578" alt="Kbact">
+    <li>
+      <h3>Kbact</h3>
+      <a href="#"></a>
+      <p>Крафтовый квас</p>
+      <p>Цена</p>
+    </li>
+  </ul>
+</section>
+<section class="pager"></section>
+<div class="pages">
+  <a href="#1">1</a>
+  <a href="#2">2</a>
+  <a href="#3">3</a>
+  <a href="#4">4</a>
+  <a href="#next">Следующая</a>
+</div>
+</section>
+</main>
+<footer>
+  <section>
+    <h2>Адрес</h2>
+    <img src="#" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
+    <div>
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      <p>тел. +7 (812) 275-75-75</p>
+      <a href="#">Напишите нам</a>
+    </div>
+  </section>
+  <section>
+    <h2>Соцсети</h2>
+    <ul>
+      <li><a href="#">Вконтакте</a></li>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Инстаграмм</a></li>
+    </ul>
+    <div>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
+  </section>
+</footer>
 </body>
 
 </html>
