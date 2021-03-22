@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/normalize.css" >
-  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/normalize.min.css" >
+  <link rel="stylesheet" href="css/style.min.css" >
 </head>
 
 <body class="page-body">
   <header class="navigation">
     <div class="navigation__container">
       <a class="navigation__logo" href="index.html">
-        <img class="navigation__logo-img" src="./img/nerds-logo.png" alt="Nerds" />
+        <img class="navigation__logo-img" src="./img/nerds-logo.svg" alt="Nerds" width="160" height="65" />
       </a>
       <nav class="navigation__block">
         <ul class="navigation__list">
@@ -23,7 +23,7 @@
             <a class="navigation__link" href="#">Клиенты</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link">Магазин</a>
+            <a class="navigation__link navigation__link--active">Магазин</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Контакты</a>
@@ -84,7 +84,7 @@
           <label class="checkbox-label" for="slider-filter">Слайдер</label>
         </li>
         <li class="grid-type-item checkbox">
-          <input class="checkbox-input visually-hidden" type="checkbox" name="block of advantages" id="block__of__advantages-filter" checked>
+          <input class="checkbox-input visually-hidden" type="checkbox" name="block of advantages" id="block__of__advantages-filter">
           <label class="checkbox-label" for="block__of__advantages-filter">Блок преимуществ</label>
         </li>
         <li class="grid-type-item checkbox">
@@ -92,11 +92,11 @@
           <label class="checkbox-label" for="news-filter">Новости</label>
         </li>
         <li class="grid-type-item checkbox">
-          <input class="checkbox-input visually-hidden" type="checkbox" name="gallery" id="gallery-filter" checked>
+          <input class="checkbox-input visually-hidden" type="checkbox" name="gallery" id="gallery-filter">
           <label class="checkbox-label" for="gallery-filter">Галерея</label>
         </li>
         <li class="grid-type-item checkbox">
-          <input class="checkbox-input visually-hidden" type="checkbox" name="basket" id="basket-filter" checked>
+          <input class="checkbox-input visually-hidden" type="checkbox" name="basket" id="basket-filter">
           <label class="checkbox-label" for="basket-filter">Корзина</label>
         </li>
       </ul>
@@ -107,6 +107,7 @@
       <div class="result-container">
         <section class="sorting">
           <h3 class="sorting__title">Сортировать:</h3>
+          <div class="sorting-container">
           <ul class="sorting__list">
             <li class="sorting__item">
               <a class="sorting__link sorting__link--active" href="#">По цене</a>
@@ -120,7 +121,7 @@
           </ul>
           <ul class="sorting-direction">
             <li class="sorting-direction__item">
-              <a class="sorting-direction__link" href="#" aria-label="По убыванию">
+              <a class="sorting-direction__link sorting-direction__link--active" href="#" aria-label="По убыванию">
                 <svg class="sorting-direction-img" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11"/>
                   </svg>
@@ -134,6 +135,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </section>
         <section class="page-catalog">
           <h2 class="visually-hidden">Каталог</h2>
@@ -198,7 +200,7 @@
           <h2 class="visually-hidden">Переключатель страниц</h2>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="page-number current">1</a>
+              <a class="page-number page-number--current">1</a>
             </li>
             <li class="pagination-item">
               <a class="page-number" href="#">2</a>
@@ -284,7 +286,7 @@
       </div>
     </section>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

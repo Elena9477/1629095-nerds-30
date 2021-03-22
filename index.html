@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body class="page-body">
@@ -13,8 +13,8 @@
         <a class="navigation__logo">
           <img
             class="navigation__logo-img"
-            src="./img/nerds-logo.png"
-            alt="Nerds"
+            src="./img/nerds-logo.svg"
+            alt="Nerds" width="160" height="65"
           />
         </a>
         <nav class="navigation__block">
@@ -48,36 +48,31 @@
               class="promo__slider-item promo__slider-item--first promo__slider-item--active"
             >
               <h3 class="promo__slider-title">Долго, дорого, скурпулёзно.</h3>
-              <p class="promo__slider-text">
+              <p class="promo__slider-text promo__slider-text--first">
                 Математически выверенный дизайн
-                <br />для вашего сайта или мобильного приложения.
+                <br>для вашего сайта или мобильного
+                приложения.
               </p>
-              <a class="red-button promo__slider-button" href="#"
-                >Узнать больше</a
-              >
+              <a class="red-button promo__slider-button" href="#">Узнать больше</a>
             </li>
             <li class="promo__slider-item promo__slider-item--second">
               <h3 class="promo__slider-title">
-                Любим математику
-                <br />как никто другой
+                Любим математику как никто другой
               </h3>
               <p class="promo__slider-text">
                 Никакого креатива,только математические формулы для расчёта
                 идеальных пропорций
               </p>
-              <a class="red-button promo__slider-button" href="#"
-                >Узнать больше</a
-              >
+              <a class="red-button promo__slider-button" href="#">Узнать больше</a>
             </li>
             <li class="promo__slider-item promo__slider-item--third">
-              <h3 class="promo__slider-title">Только ночь, только хардкор</h3>
+              <h3 class="promo__slider-title">Только ночь,
+                <br>только хардкор</h3>
               <p class="promo__slider-text">
-                Работать днём, как все? Мы против этого.Ближе к полуночи работа
-                только начинается
+                Работать днём, как все? Мы против этого.
+                <br>Ближе к полуночи работа только начинается.
               </p>
-              <a class="red-button promo__slider-button" href="#"
-                >Узнать больше</a
-              >
+              <a class="red-button promo__slider-button" href="#">Узнать больше</a>
             </li>
           </ul>
           <ul class="promo__slider-pager">
@@ -147,16 +142,20 @@
             Исповедуем принципа минимализма и чистоты. Ставим математический
             расчёт превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <p class="description__caption">Выполняем заказы на разработку:<p>
+          <p class="description__caption">Выполняем заказы на разработку:</p>
+          <p></p>
           <ul class="description__jobs-list">
             <li class="description__job-item">Веб-сайтов любой сложности</li>
-            <li class="description__job-item">Мобильных приложений для iOS и Android</li>
-            <li class="description__job-item">Слайдшоу и видео для корпоротивных презентаций</li>
+            <li class="description__job-item">
+              Мобильных приложений для iOS и Android
+            </li>
+            <li class="description__job-item">
+              Слайдшоу и видео для корпоротивных презентаций
+            </li>
           </ul>
         </section>
         <section class="plus">
           <h2 class="visually-hidden">Преимущества</h2>
-          <img class="plus" src="./img/nerds-illustration-1.png" alt="Nerds" />
           <p class="plus__subtitle">С 2004 года любим точность во всём:</p>
           <ul class="plus__list">
             <li class="plus__item">
@@ -301,24 +300,44 @@
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-      <div class="modal-contacts-name">
-        <p class="modal-login">
+        <div class="modal-contacts-name">
+          <p class="modal-login">
             <label class="modal-label" for="name">Ваше имя:</label>
-            <input class="modal-input name" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
+            <input
+              class="modal-input name"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+              required
+            />
           </p>
           <p class="modal-login">
             <label class="modal-label" for="email">Ваш email:</label>
-            <input class="modal-input mail" id="email" type="text" name="email" placeholder="email@example.com" required>
+            <input
+              class="modal-input mail"
+              id="email"
+              type="text"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+          </p>
+        </div>
+        <p class="modal-login-m">
+          <label class="modal-label" for="message">Текст письма:</label>
+          <textarea
+            class="modal-message text"
+            id="message"
+            name="message"
+            placeholder="В свободной форме"
+            required
+          ></textarea>
         </p>
-      </div>
-      <p class="modal-login-m">
-        <label class="modal-label" for="message">Текст письма:</label>
-        <textarea class="modal-message text" id="message" name="message" placeholder="В свободной форме" required></textarea>
-      </p>
-    <button class="red-button modal-submit" type="submit">Отправить</button>
+        <button class="red-button modal-submit" type="submit">Отправить</button>
       </form>
       <button class="modal-close" aria-label="Закрыть модальное окно"></button>
     </section>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
