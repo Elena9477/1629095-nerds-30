@@ -25,7 +25,7 @@
 
 :root {
   --basic-text: #000000;
-  --pagination-current: rgba(0, 0, 0, 0.01);
+  --pagination-current: #dbdbdb;
   --basic-text-catalog: rgba(0, 0, 0, 0.3);
   --basic-text-sorting: rgba(0, 0, 0, 0.6);
   --basic-text-form: rgba(0, 0, 0, 0.25);
@@ -65,6 +65,7 @@
   --sorting-activ-img: #231f20;
   --page-ac: rgba(0, 1, 1, 0.1);
   --modal-box: rgba(0, 1, 1, 0.75);
+
 }
 
 /* Global*/
